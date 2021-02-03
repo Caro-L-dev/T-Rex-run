@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const dino = document.querySelector('.dino');
+    let isJumping = false;
 
     function control(event) {
         // keycode - keyboard touch (spacebar)
         if (event.keyCode === 32) {
-        jump();
+            if (!isJumping) {
+                isJumping = true;
+                jump();
+            }
+        
         }
     }
     document.addEventListener('keyup', control);
@@ -17,6 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(timerId);
                 console.log('down');
                 let downTimerId = setInterval(function () {
+                    if (position === 0) {
+                        clearInterval(downTimerId);
+                        isJumping = false;
+                    };
                     position -=30;
                     dino.style.bottom = position + 'px';
                 },20);
