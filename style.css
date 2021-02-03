@@ -1,15 +1,91 @@
+* {
+    overflow: hidden;
+    padding-top: 20px;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    text-align: center;
+}
+
+
+.game__container{
+    margin: 4vh auto;
+    /*background-color: #EFEFEF;*/
+    background-color: rgba(9,85,121,1);
+    width: 85vh;
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 11px 1px rgb(0, 0, 0);
+}
+
+.game__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: 5%;
+}
+
+.game__description{
+    font-size: 20px;
+    padding-top: 20px;
+    font-style: oblique;
+}
+
+.game__description2{
+    font-size: 16px;
+    padding-top: 10px;
+    color: rgba(54,229,230,1);
+    font-style: oblique;
+}
+
+    #alert {
+        font-weight: bold;
+        width: 100%;
+        padding-top: 25px;
+        font-size: 20px;
+    }
+
+
 .dino{
     position: absolute;
+    display: flex;
     width: 60px;
     height: 60px;
-    background-color: aquamarine;
     bottom: 0px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+    margin-left: 15px;   
 }
 
 .obstacle {
     position: absolute;
-    width: 60px;
+    width: 30px;
     height: 60px;
-    background-color: orange;
+    background-color: rgb(95, 141, 86);
     bottom: 0px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+}
+
+.sky{
+    margin-top: 50px;
+    width: 85vh;
+    height: 90vh;
+    background: rgb(54,229,230);
+    background: linear-gradient(0deg, rgba(54,229,230,1) 0%, rgba(9,85,121,1) 100%);
+}
+
+.ground{
+    height: 5vh;
+    width: 85vh;
+    background-color: rgb(201, 167, 76);
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 47px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

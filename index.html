@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-Rex run</title>
     <link rel="stylesheet" href="style.css"><link>
+    <link rel="stylesheet" href="reset.css"><link>
     <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
 
+    <div class="game__container">
+        <h1 class="game__title">T-Rex Game</h1>
+        <p class="game__description">Press the escape key to jump and dodge obstacles in front of you!</p>
+        <p class="game__description2">Press F5 on your keyboard to replay.</p>
     <h2 id="alert"></h2>
+    <div class="sky"></div>
+    <div class="ground"></div>
     <div class="grid">
-        <div class="dino"></div>
+        <div class="dino">
+            <img src="dino.png" alt="dino" >
+        </div>
+    </div>
+    
     </div>
     
 </body>
