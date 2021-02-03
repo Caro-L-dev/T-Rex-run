@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function generateObstacles() {
+        let randomTime = Math.random() * 4000;
         let obstaclePosition = 1000;
         const obstacle = document.createElement('div');
         obstacle.classList.add('obstacle');
@@ -60,7 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             obstaclePosition -=10;
             obstacle.style.left = obstaclePosition + 'px';
+            
         },20);
+        setTimeout(generateObstacles, randomTime);
     }
     generateObstacles();
 });
