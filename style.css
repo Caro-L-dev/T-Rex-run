@@ -42,6 +42,12 @@ body{
     font-style: oblique;
 }
 
+.game__description3{
+    color: whitesmoke;
+    font-style: oblique;
+    padding-top: 5%;
+}
+
     #alert {
         font-weight: bold;
         width: 100%;
@@ -88,4 +94,9 @@ body{
     margin-bottom: 47px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+span{
+    color: orange;
+    font-weight: bold;
 }
