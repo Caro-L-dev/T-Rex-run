@@ -51,6 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
         obstacle.classList.add('obstacle');
         grid.appendChild(obstacle);
         obstacle.style.left = obstaclePosition + 'px';
+
+        let timerId = setInterval(function() {
+            if (obstaclePosition === 0){
+                clearInterval(timerId);
+                alert('Game Over');
+            }
+
+            obstaclePosition -=10;
+            obstacle.style.left = obstaclePosition + 'px';
+        },20);
     }
     generateObstacles();
 });
