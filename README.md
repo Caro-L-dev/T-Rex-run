@@ -1,10 +1,4 @@
 # T-Rex-run app
 
-Version 01: https://zen-mirzakhani-07144d.netlify.app/
 
-What is expected for V.02:
---------------------------
-
-* Add a score counter.
-* Add sounds when the character jumps over the obstacle.
-* ???
+![T-rex Game](https://user-images.githubusercontent.com/65663844/153215473-ed45f37b-0e63-4c49-bfd1-8ce3c5a9da9a.png)
